@@ -6,67 +6,67 @@ var rights = 0;
 	var tocheck = "";
 	var quiz = {
  		0:{ 
- 			q: "What is HTML?",
- 			choices: ["Hyperspace Time Machine Lover","Hypertext Markup Language","Hypertext Meta Links", "Hyperloop Time Makeup Language"],
- 			answer:"Hypertext Markup Language",
- 			correct: "assets/images/green.png",
- 			wrong: "assets/images/red.png",
+ 			q: "What is Leslie's Favorite restaurant?",
+ 			choices: ["Paunch Burger","Tom's Bistro","Sue's Salads", "JJ's Diner"],
+ 			answer:"JJ's Diner",
+ 			correct: "assets/images/green.gif",
+ 			wrong: "assets/images/red.gif",
  			},
  		1:{ 
- 			q: "What is the original name of JavaScript?",
- 			choices: ["Frustrating Language","Google","AskJeeves", "Mocha"],
- 			answer:"Mocha",
- 			correct: "assets/images/green.png",
- 			wrong: "assets/images/red.png",
+ 			q: "What is Ron Swanson's ex-wife's name?",
+ 			choices: ["Tammy","Tamara","Anna", "April"],
+ 			answer:"Tammy",
+ 			correct: "assets/images/green.gif",
+ 			wrong: "assets/images/red.gif",
  			},
  		2:{ 
- 			q: "What is a boolean?",
- 			choices: ["A type of noodle","A type of loop","A data type that is either true or false", "A lean boo"],
- 			answer:"A data type that is either true or false",
- 			correct: "assets/images/green.png",
- 			wrong: "assets/images/red.png",
+ 			q: "What is Jerry's Real Name?",
+ 			choices: ["Gary","Terry","Jeff", "Henry"],
+ 			answer:"Gary",
+ 			correct: "assets/images/green.gif",
+ 			wrong: "assets/images/red.gif",
  			},
  		3:{ 
- 			q: "Who invented the internet?",
- 			choices: ["Bill Gates","The Government","Melania Trump", "Robert E. Kahn and Vint Cerf"],
- 			answer:"Robert E. Kahn and Vint Cerf",
- 			correct: "assets/images/green.png",
- 			wrong: "assets/images/red.png",
+ 			q: "What is Pawnee's first and only media conglomerate?",
+ 			choices: ["Entertainment 420","Entertainment 320","Entertainment 720", "Entertainment 650"],
+ 			answer:"Entertainment 720",
+ 			correct: "assets/images/green.gif",
+ 			wrong: "assets/images/red.gif",
  			},
  		4:{ 
- 			q: "What JavaScript method turns an array into a string?",
- 			choices: [".push",".pull",".toString", ".parseInt"],
- 			answer:".toString",
- 			correct: "assets/images/green.png",
- 			wrong: "assets/images/red.png",
+ 			q: "Where does Donna have a condo in?",
+ 			choices: ["Portland","California","Seattle", "Maine"],
+ 			answer:"Seattle",
+ 			correct: "assets/images/green.gif",
+ 			wrong: "assets/images/red.gif",
  			},
  		5:{ 
- 			q: "What does DOM mean??",
- 			choices: ["Dirty Old Man","Document Object Model","Document On Modem", "Document Over Monitor"],
- 			answer:"Document Object Model",
- 			correct: "assets/images/green.png",
- 			wrong: "assets/images/red.png",
+ 			q: "What did April major in?",
+ 			choices: ["Halloween Studies","Vet Tech","Mortician Studies", "Culinary"],
+ 			answer:"Halloween Studies",
+ 			correct: "assets/images/green.gif",
+ 			wrong: "assets/images/red.gif",
  			},
  		6:{ 
- 			q: "Which is not a data type?",
- 			choices: ["List","String","Object", "Array"],
- 			answer:"List",
- 			correct: "assets/images/green.png",
- 			wrong: "assets/images/red.png",
+ 			q: "When is TREAT YO SELF day?",
+ 			choices: ["October 13","Everyday","November 15", "December 25"],
+ 			answer:"October 13",
+ 			correct: "assets/images/green.gif",
+ 			wrong: "assets/images/red.gif",
  			},
  		7:{ 
- 			q: "What JS event will execute a function when the page loads?",
- 			choices: ["style=","script=","data-value=", "onload="],
- 			answer:"onload=",
- 			correct: "assets/images/green.png",
- 			wrong: "assets/images/red.png",
+ 			q: "What meal does Leslie love?",
+ 			choices: ["Lunch","Dinner","Brunch", "Breakfast"],
+ 			answer:"Breakfast",
+ 			correct: "assets/images/green.gif",
+ 			wrong: "assets/images/red.gif",
  			},
  		8:{ 
- 			q: "What git command stages all your changes?",
- 			choices: ["git pull","git push","git add", "git config"],
- 			answer:"git add",
- 			correct: "assets/images/green.png",
- 			wrong: "assets/images/red.png",
+ 			q: "What is Ann Perkin's middle name?",
+ 			choices: ["Meredith","Anna","Lorraine", "Steve"],
+ 			answer:"Meredith",
+ 			correct: "assets/images/green.gif",
+ 			wrong: "assets/images/red.gif",
  			},
  		9:{
  			q: "",
@@ -119,18 +119,18 @@ function checking(){
 				$("#rights").html("Rights:"+ rights);
 				$("#wrongs").html("Wrongs:"+ wrongs);
 				$("#unanswered").html("Unanswered:"+ unanswered);
-				$("#reset").html("<span onclick=reset()>" + "RESET" + "</span>");
+				$("#reset").html("<span id= 'resetbutton' onclick=reset()>" + "RESET" + "</span>");
 							}
 			}
 
 function right(){
 				$("#question").html("<br>"+ "Good Job!!!");
-				$("#choices").html("<img" +" " + "style='width:360px;height:300px'" + "src="+ quiz[questionindex - 1].correct + ">");
+				$("#choices").html("<img" +" " + "src="+ quiz[questionindex - 1].correct + ">");
 			}
 
 function wrong(){
 				$("#question").html("<br>"+ quiz[questionindex - 1].answer);
-				$("#choices").html("<img" +" " + "style='width:300px;height:300px'" + "src="+ quiz[questionindex - 1].wrong + ">");
+				$("#choices").html("<img" +" " + "src="+ quiz[questionindex - 1].wrong + ">");
 			}
 
 function reset(){
@@ -157,7 +157,7 @@ function decrement(){
             	unanswered ++;
                 stop();
                 $("#question").html("Times Up!!");
-				$("#choices").html("<img" + " "	+ "style='width:500px;height:300px'" + "src= assets/images/timesup.png"+ ">");
+				$("#choices").html("<img" + " "	+ "src= assets/images/timesup.gif"+ ">");
 				timegiven = 30;	
 				questionindex ++
               	setTimeout(remove,1999);
