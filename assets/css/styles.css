@@ -1,11 +1,20 @@
 body{
 	text-align: center;
-	background-image: url(../images/classroom.jpg);
+	background-image: url(../images/background.jpg);
 }
 
 
-span:hover{
+#start:hover{
 	border: solid;
+}
+
+#resetbutton:hover{
+	border: solid;
+}
+
+.choices:hover{
+	background-color: brown;
+	border:solid;
 }
 
 .main{
@@ -15,8 +24,9 @@ span:hover{
 #start{
 	position:relative;
 	font-size:50px;
+	top:450px;
 	color:white;
-	top:300px;
+	background-color: brown;
 }
 
 #question{
@@ -26,31 +36,42 @@ span:hover{
 
 #choices{
 	font-size:40px;
-	color:white;
+	color:maroon;
+	font-weight:bolder;
 }
 
 #time{
 	font-size:60px;
 	color:white;
+	background-color: brown;
+	width:120px;
+	margin:0 auto;
+
 }
 
 #rights{
 	font-size:60px;
 	color:white;
+	background-color: brown;
+
 }
 
 #wrongs{
 	font-size:60px;
 	color:white;
+	background-color: brown;
+
 }
 
 #unanswered{
 	font-size:60px;
 	color:white;
+	background-color: brown;
 }
 
 
-#reset{
-	font-size:60px;
+#resetbutton{
+	font-size:50px;
 	color:white;
+	background-color: brown;
 }
