@@ -14,7 +14,7 @@
   > 3. At the end of the game the user will see how many questions he or she got right
   > 4. A user can then click reset and go through the game again
   
-## Languages Used
+## Technologies Used
   > 1. HTML
   > 2. jQuery and JavaScript
   > 3. CSS
